@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges Oracle ONE - Decodificador De Textos</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/0675c8d2d5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <main class="principal">
+
+        <header>
+            <img class="logo" src="/imagens/logo.png" alt="Logo">
+        </header>
+
+        <div class="secao-input-texto">
+            <textarea class="input-texto" name="input" id="" cols="70" rows="10" placeholder="Digite o texto aqui" required="required"></textarea>
+            
+            <h6>* Apenas letras minúsculas e sem acentos</h6>
+            <div class="botoes">
+                <button class="botao botao-encriptar" id="botao_encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="botao botao-desencriptar" id="botao_desencriptar" onclick="Desencriptar()">Desencriptar</button>
+            </div>
+
+        </div>
+
+        <div class="secao-naoencontrado" id="buscar">
+            <img class="img-boneco" src="/imagens/Pessoa.png" alt="Imagem texto não encontrado">
+            <p>Nenhuma mensagem foi encontrada</p>
+            <span>Escreva o texto que deseja criptografar.</span>
+        </div>                   
+
+        <div class="secao-resultados" id="resultado">
+            <textarea class="input-texto-resultado" name="" id="msjEncriptado" cols="70" rows="10"></textarea>
+            <button class="botao botao-copiar" onclick="btnCopiar()">Copiar</button>
+        </div>
+
+    </main>
+
+
+    <footer class="rodape">
+        <div class="autor">Augusto Jose Santos Nascimento</div>
+        <div class="siga-me">Siga-me</div>
+        <div class="rede-social">
+            <a href="https://www.linkedin.com/in/augusto-nascimento-2bb936204/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/guztu13" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;800;900&family=Roboto:wght@100;300;500;900&display=swap');
+
+:root{
+    --cor-fundo: #F3F5FC;
+    --azul-escuro-300: #0A3871;
+    --azul-escuro-400: #072B61;
+    --cinza-400: #495057;
+    --cinza-500: #343A40;
+    --cinza-claro: #D8DFE8;
+    --cinza-claro-200: #EFF1FA;
+    --branco: #FFFFFF;
+    --preto: #000000;
+}
+
+html{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*Propriedade para que o preenchimento e a borda passem a fazer parte do cálculo da largura da caixa e não a adicione posteriormente.*/
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cor-fundo);
+}
+
+.logo{
+   margin: 40px;
+}
+
+.principal{
+    width: 960px;
+    height: 1024px;
+}
+
+.input-texto{
+    width: 577px;
+    height: 100px;
+    left: 240px;
+    top: 168px;
+    border: none;
+    background-color: var(--cor-fundo);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 150%;
+    color: var(--azul-escuro-300);
+    resize: none;
+}
+
+.input-texto-resultado{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    width: 336px;
+    height: 781px;
+    left: 32px;
+    top: 32px;
+    border: none;
+    resize: none;
+    color: var(--cinza-400);
+}
+
+.secao-input-texto{
+    position: absolute;
+    left: 240px;
+    top: 168px;
+}
+
+.secao-resultados{
+    position: absolute;
+    display: none;
+    left: 1000px;
+    top: 40px;
+    width: 400px;
+    height: 944px;
+    background: var(--branco);
+    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.88);
+    border-radius: 32px;
+}
+
+.secao-naoencontrado{
+    position: absolute;
+    display: inline-block;
+    left: 1000px;
+    top: 40px;
+    width: 400px;
+    height: 944px;
+    background: var(--branco);
+    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.88);
+    border-radius: 32px;
+}
+
+.img-boneco{
+   position: absolute;
+   width: 336px;
+   height: 304px;
+   left: 32px;
+   right: 32px;
+   top:283px;
+   margin-bottom: 20px;
+}
+
+.secao-naoencontrado p{
+    position: absolute;
+    color: var(--cinza-500);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 120%;
+    font-family: 'Roboto', sans-serif;
+    font-style:normal;
+    top: 560px;
+    left:32px;
+    right: 32px;
+    text-align: center;
+}
+
+.secao-naoencontrado span{
+    position: absolute;
+    color: var(--cinza-400);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+    font-family: 'Roboto', sans-serif;
+    font-style:normal;
+    top: 660px;
+    left:32px;
+    right: 32px;
+    text-align: center;
+}
+
+.botoes{
+    display: flex;
+    position: absolute;
+    top: 700px;
+    margin: 0px 24px;
+}
+
+.botao{
+    cursor: pointer;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    margin: 0 5px 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 24px;
+    border: 1px solid var(--azul-escuro-300);
+}
+
+.botao-encriptar{
+    color: var(--branco);
+    background: var(--azul-escuro-300);
+}
+
+.botao-encriptar:hover{
+    transition: 1s all;
+    background: var(--cinza-claro-200);
+    color: var(--azul-escuro-300);
+}
+
+.botao-desencriptar{
+    color: var(--azul-escuro-300);
+    background: var(--cinza-claro);
+ }
+
+.botao-desencriptar:hover{
+     transition: 1s all;
+     background:var(--azul-escuro-400);
+     color: var(--branco);
+ }
+
+.botao-copiar{
+    position: absolute;
+    top: 820px;
+    left: 32px;
+    color: var(--azul-escuro-300);
+    background: var(--cinza-claro);
+ }
+
+h6{
+    position: absolute;
+    top: 650px;
+    left: 32px;
+    color: var(--cinza-400);
+    opacity: 0.8;
+}
+
+/* SECÇÃO FOOTER/ RODAPER*/
+
+.rodape{
+    display: grid;
+    height: 100%;
+    align-items: center;
+    background-color: var(--preto);
+    color: var(--branco);
+    grid-template-areas: "autor siga-me rede-social";
+}
+
+.rodape .autor{
+    grid-template-areas: autor;
+    justify-content: center;
+    padding: 26px;
+    color: var(--branco);
+}
+
+.rodape .siga-me{
+    grid-template-areas: siga-me;
+    text-align: center;
+}
+
+.rodape .rede-social{
+    grid-template-areas: rede-social;
+    font-size: 1.3em;
+}
+
+.rodape .rede-social .fa-brands{
+    margin-right: 15px;
+    color: #EDCB54;
+}
+
+.rodape .rede-social .fa-brands:hover{
+    color: var(--branco);
+}
